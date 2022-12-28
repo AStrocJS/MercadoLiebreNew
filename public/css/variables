@@ -1,0 +1,9 @@
+:root {
+    --tipografiaRoboto: font-family: 'Roboto', sans-serif;
+    --Amarillo : #EAC926;
+    --Azul : #03264C;
+    --Celeste : #1259c3;
+    --GrisOscuro : #666;
+    --grisClaro : #ebebeb;
+    --Verde : #39b54a;
+}
