@@ -1,5 +1,531 @@
-@import url(/css/footer.css);
-@import url(/css/general.css);
-@import url(/css/header.css);
-@import url(/css/home.css);
-@import url(/css/variables.css);
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259C3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #EBEBEB;
+    --Verde: #39B54A;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: var(--Gris-claro);
+}
+
+.home__header {
+    background-color: var(--Amarillo);
+    padding: 10px;
+}
+
+header p {
+    text-align: center;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    width: 59%;
+    margin-right: 3%;
+}
+
+.search input {
+    display: flex;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.fa-search {
+    color: gray;
+    position: relative;
+    right: 21px;
+}
+
+.lupa {
+    /* width: 17%; */
+    background-color: #ffffff00;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    top: 27px;
+    right: 10px;
+}
+
+.home__compra--en {
+    font-size: 400px;
+    text-align: center;
+    font-size: 12px;
+    padding: 19px;
+}
+
+.header__buerger--menu {
+    color: white;
+    text-align: center;
+}
+
+.fa-bars {
+    background-color: var(--Celeste);
+    padding: 12px;
+    border-radius: 15%;
+    font-size: 25px;
+}
+
+.navbar {
+    display: none;
+}
+
+.navbar,
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar,
+a {
+    color: var(--Gris-oscuro);
+    display: inline-block;
+    font-size: 17px;
+}
+
+.navbar {
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.text {
+    color: var(--Gris-oscuro);
+    text-align: center;
+    font-size: 28px;
+}
+
+main {
+    background-color: var(--Gris-claro);
+    width: 90%;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produc {
+    margin-bottom: 10px;
+    margin: auto;
+    position: relative;
+    width: 80%;
+    background-color: white;
+    margin-top: 12px;
+}
+
+.produc img {
+    width: 100%;
+}
+
+.inf--produc {
+    display: flex;
+    border-top: 2px solid var(--Gris-claro);
+    padding: 26px;
+    flex-direction: column;
+}
+
+.preciodescuento {
+    display: flex;
+}
+
+.precio {
+    font-size: 18px;
+    /* width: 30%; */
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b34a;
+    width: auto;
+    padding: 0px 0px 0px 14px;
+}
+
+.fa-truck {
+    color: #39b54a;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    position: absolute;
+    right: 20px;
+    bottom: 85px;
+}
+
+.freet {
+    display: flex;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descrip {
+    font-size: 12px;
+}
+
+.descripcion {
+    font-size: 16px;
+    color: var(--Gris-oscuro);
+    padding: 9px 0px 0px 0px;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.fa-credit-card {
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+    margin: 14px;
+}
+
+.fa-credit-card:hover {
+    color: var(--Amarillo);
+    margin-bottom: 1px;
+}
+
+.fa-gift {
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+    margin: 10px;
+}
+
+.fa-gift:hover {
+    color: var(--Amarillo);
+    margin-bottom: 1px;
+}
+
+.fa-user-shield {
+    color: var(--Celeste);
+    transition: color 350ms;
+    margin-bottom: 1px;
+    margin: 10px;
+}
+
+.fa-user-shield:hover {
+    color: var(--Amarillo);
+    margin-bottom: 1px;
+}
+
+footer {
+    padding: 20px 0px 0px 0px;
+}
+
+
+@media(min-width: 361px) {
+    .header-top {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        width: 52%;
+        justify-content: space-between;
+    }
+
+    .search input {
+        display: block;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .fa-search {
+        display: flex;
+        color: gray;
+        position: relative;
+        right: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+}
+
+@media(min-width: 769px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu {
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra {
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top {
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img {
+        display: flex;
+        position: relative;
+    }
+
+    .main--section {
+        display: flex;
+    }
+
+
+    .articulos {
+        display: flex;
+    }
+
+    .produc {
+        width: 45%;
+    }
+
+
+}
+
+@media(min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu {
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra {
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top {
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img {
+        display: flex;
+        position: relative;
+    }
+
+    .main--section {
+        display: flex;
+    }
+
+
+    .articulos {
+        display: flex;
+    }
+
+    .produc {
+        width: 45%;
+    }
+
+
+}
+
+
+@media(min-width: 1180px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu {
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra {
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .search input {
+        /* display: flex; */
+        /* background-color: white; */
+        /* border: none; */
+        /* border-radius: 5px; */
+        /* padding: 10px; */
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 60%;
+    }
+
+    .header-top {
+        width: 77%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img {
+        display: flex;
+        position: relative;
+        width: 81%;
+    }
+
+    .main--section {
+        display: flex;
+    }
+
+
+    .articulos {
+        display: flex;
+    }
+
+    .produc {
+        width: 24%;
+    }
+}
