@@ -1,14 +1,3 @@
-:root {
-    --Amarillo: #EAC926;
-    --Azul: #03264C;
-    --Celeste: #1259C3;
-    --Gris-oscuro: #666;
-    --Gris-claro: #EBEBEB;
-    --Verde: #39B54A;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     margin: 0px;
     padding: 0px;
@@ -27,6 +16,11 @@ body {
 }
 
 header p {
+    text-align: center;
+}
+
+.header__buerger--menu {
+    color: white;
     text-align: center;
 }
 
@@ -62,7 +56,6 @@ header p {
 }
 
 .lupa {
-    /* width: 17%; */
     background-color: #ffffff00;
     border: none;
     border-radius: 5px;
@@ -78,10 +71,7 @@ header p {
     padding: 19px;
 }
 
-.header__buerger--menu {
-    color: white;
-    text-align: center;
-}
+
 
 .fa-bars {
     background-color: var(--Celeste);
@@ -128,6 +118,87 @@ main {
     margin: auto;
 }
 
+.register__form-submit {
+    background-color: var(--Celeste);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: white;
+}
+
+.register__form-input-checkbox {
+    background-color: var(--Celeste);
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: white;
+}
+
+.register-form {
+    background-color: #dde0e0;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 40px 0px;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.login-form {
+    background-color: var(--Gris-claro);
+    justify-content: center;
+    border-radius: 20px;
+    margin: 40px 0px;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.register__form--detalles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+.register__form__detalles--perfilusuario {
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+.register__form__detalles--checkbox {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.register__form-input {
+    background-color: var(--Gris-claro);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+.login__form-input {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+}
+
+
 h3 {
     text-align: center;
 }
@@ -164,7 +235,6 @@ h3 {
 
 .precio {
     font-size: 18px;
-    /* width: 30%; */
 }
 
 .descuento {
@@ -218,11 +288,6 @@ h3 {
     margin: 14px;
 }
 
-.fa-credit-card:hover {
-    color: var(--Amarillo);
-    margin-bottom: 1px;
-}
-
 .fa-gift {
     color: var(--Celeste);
     transition: color 350ms;
@@ -230,21 +295,11 @@ h3 {
     margin: 10px;
 }
 
-.fa-gift:hover {
-    color: var(--Amarillo);
-    margin-bottom: 1px;
-}
-
 .fa-user-shield {
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
     margin: 10px;
-}
-
-.fa-user-shield:hover {
-    color: var(--Amarillo);
-    margin-bottom: 1px;
 }
 
 footer {
@@ -283,6 +338,87 @@ footer {
         right: 20px;
         justify-content: space-between;
         align-items: center;
+    }
+
+
+}
+
+
+
+@media(min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .home__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu {
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
+        text-align: center;
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra {
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top {
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .logo {
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img {
+        display: flex;
+        position: relative;
+    }
+
+    .main--section {
+        display: flex;
+    }
+
+
+    .articulos {
+        display: flex;
+    }
+
+    .produc {
+        width: 45%;
     }
 
 
@@ -364,86 +500,6 @@ footer {
         width: 45%;
     }
 
-
-}
-
-@media(min-width: 768px) {
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .home__header {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__buerger--menu {
-        display: none;
-    }
-
-    .home__compra--en {
-        font-size: 400px;
-        text-align: center;
-        font-size: 12px;
-        padding: 0px;
-    }
-
-    .barra {
-        display: flex;
-        gap: 10px;
-        padding: 40px 0px 0px 0px;
-    }
-
-    .navbar {
-        display: flex;
-    }
-
-    .search {
-        display: flex;
-    }
-
-    .search {
-        display: flex;
-        align-items: center;
-        width: 27%;
-        margin-right: 16%;
-    }
-
-    .header-top {
-        width: 65%;
-        justify-content: space-between;
-    }
-
-    .logo {
-        padding: 0px 0px 0px 10px;
-    }
-
-    .logo img {
-        display: flex;
-        position: relative;
-    }
-
-    .main--section {
-        display: flex;
-    }
-
-
-    .articulos {
-        display: flex;
-    }
-
-    .produc {
-        width: 45%;
-    }
-
-
 }
 
 
@@ -482,11 +538,6 @@ footer {
     }
 
     .search input {
-        /* display: flex; */
-        /* background-color: white; */
-        /* border: none; */
-        /* border-radius: 5px; */
-        /* padding: 10px; */
         width: 100%;
     }
 

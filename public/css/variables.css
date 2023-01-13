@@ -1,9 +1,10 @@
 :root {
-    --tipografiaRoboto: font-family: 'Roboto', sans-serif;
-    --Amarillo : #EAC926;
-    --Azul : #03264C;
-    --Celeste : #1259c3;
-    --GrisOscuro : #666;
-    --grisClaro : #ebebeb;
-    --Verde : #39b54a;
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259C3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #EBEBEB;
+    --Verde: #39B54A;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');

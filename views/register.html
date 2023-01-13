@@ -49,67 +49,70 @@
             </ul>
         </nav>
     </header>
+    <main class="register--main">
+        <form class="register-form" action="registro" method="POST">
+            <div class="register__form--detalles">
+                <label for="Nombre">
+                    <input class="register__form-input" type="text" name="Nombre" placeholder="Nombre y Apellido">
+                </label>
 
+                <label for="usuario">
+                    <input class="register__form-input" type="text" name="usuario" placeholder="Usuario">
+                </label>
 
-    <section class="banner">
-        <img src="/images/img-home-banner.jpg" alt="">
-    </section>
+                <label for="clave">
+                    <input class="register__form-input" type="password" name="clave" placeholder="Contraseña">
+                </label>
 
-    <main class="home--main">
-        <h2 class="text">Basado en tu ultima visita</h2>
-        <section class="main--section">
-            <div class="articulos">
-                <article class="produc">
-                    <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="100%" class="produc__img">
-                    <div class="inf--produc">
-                        <div><i class="fas fa-truck"></i></div>
-                        <div class="preciodescuento">
-                            <h3 class="precio">$6.770</h3>
-                            <p class="descuento">40% OFF</p>
-                        </div>
-                        <h4 class="descripcion">Cafetera Moulinex</h4>
-                    </div>
-                </article>
+                <label for="email">
+                    <input class="register__form-input" type="email" name="email" placeholder="Correo Electrónico" required>
+                </label>
 
-                <article class="produc">
-                    <img src="/images/img-macbook-pro-2019.jpg" alt="MacBook" width="100%" class="produc__img">
-                    <div class="inf--produc">
-                        <div><i class="fas fa-truck"></i></div>
-                        <div class="preciodescuento">
-                            <h3 class="precio">$230.000</h3>
-                            <p class="descuento">20% OFF</p>
-                        </div>
-                        <h4 class="descripcion">MacBook Pro 2019</h4>
-                    </div>
-                </article>
+                <div>
+                    <h2 class="text">Fecha de Nacimiento</h2>
+                    <input class="register__form-input" type="date" name="fecha">
+                </div>
 
-                <article class="produc">
-                    <img src="/images/img-samsung-galaxy-s10.jpg" alt="Samsung" width="100%" class="produc__img">
-                    <div class="inf--produc">
-                        <div><i class="fas fa-truck"></i></div>
-                        <div class="preciodescuento">
-                            <h3 class="precio">$70.500</h3>
-                            <p class="descuento">10% OFF</p>
-                        </div>
-                        <h4 class="descripcion">Samsung Galaxy S10</h4>
-                    </div>
-                </article>
+                <label for="domicilio">
+                    <input class="register__form-input" type="text" name="domicilio" placeholder="Domicilio">
+                </label>
 
-                <article class="produc">
-                    <img src="/images/img-tv-samsung-smart.jpg" alt="Samsung smartTv" width="100%" class="produc__img">
-                    <div class="inf--produc">
-                        <div><i class="fas fa-truck"></i></div>
-                        <div class="preciodescuento">
-                            <h3 class="precio">$23.200</h3>
-                            <p class="descuento">5% OFF</p>
-                        </div>
-                        <h4 class="descripcion">SmartTv Samsung 43</h4>
-                    </div>
+                <div>
+                    <h2 class="text">Perfil del usuario</h2>
+                    <label for="TipoCuenta">Comprador
+                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta">
+                    </label>
+
+                    <label for="TipoCuenta">Vendedor
+                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta">
+                    </label>
+                </div>
+
+                <div class="register__form__detalles--checkbox">
+                    <h2 class="text">Intereses</h2>
+                    <label for="checkbox-1">Electro
+                        <input type="checkbox" name="checkbox-1">
+                    </label>
+
+                    <label for="checkbox-2">Moda
+                        <input type="checkbox" name="checkbox-2">
+                    </label>
+
+                    <label for="checkbox-3">Hogar
+                        <input type="checkbox" name="checkbox-3">
+                    </label>
+
+                    <label for="checkbox-4">Juguetería
+                        <input type="checkbox" name="checkbox-4">
+                    </label>
+
+                    <label for="checkbox-5">Vida sana
+                        <input type="checkbox" name="checkbox-5">
+                    </label>
+                    
+                </div>
             </div>
-            </article>
-        </section>
-        <section>
-        </section>
+        </form>
     </main>
     <footer>
         <section class="Section-footer">
