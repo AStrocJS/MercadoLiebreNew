@@ -53,38 +53,67 @@
         <form class="register-form" action="registro" method="POST">
             <div class="register__form--detalles">
                 <label for="Nombre">
-                    <input class="register__form-input" type="text" name="Nombre" placeholder="Nombre y Apellido">
+                    <input class="register__form-input" type="text" name="Nombre" placeholder="Nombre y Apellido"  autocomplete="off" required>
                 </label>
 
                 <label for="usuario">
-                    <input class="register__form-input" type="text" name="usuario" placeholder="Usuario">
+                    <input class="register__form-input" type="text" name="usuario" placeholder="Usuario" required autocomplete="off">
                 </label>
 
                 <label for="clave">
-                    <input class="register__form-input" type="password" name="clave" placeholder="Contraseña">
+                    <input class="register__form-input" type="password" name="clave" placeholder="Contraseña" required>
+                </label>
+                <label for="clave">
+                    <input class="register__form-input" type="password" name="clave" placeholder="Confirmar Contraseña" required>
                 </label>
 
                 <label for="email">
-                    <input class="register__form-input" type="email" name="email" placeholder="Correo Electrónico" required>
+                    <input class="register__form-input" type="email" name="email" placeholder="Correo Electrónico" required autocomplete="off">
                 </label>
 
                 <div>
                     <h2 class="text">Fecha de Nacimiento</h2>
-                    <input class="register__form-input" type="date" name="fecha">
+                    <input class="register__form-input" type="date" name="fecha" required>
                 </div>
 
                 <label for="domicilio">
-                    <input class="register__form-input" type="text" name="domicilio" placeholder="Domicilio">
+                    <input class="register__form-input" type="text" name="domicilio" placeholder="Domicilio" required autocomplete="off">
                 </label>
+                <label for="provincia">Seleccione una provincia</label>
+                <select class="register__form-input" name="provincia" id="provincia">
+                <option value="BuenosAires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="LaPampa">La Pampa</option>
+                <option value="LaRioja">LaRioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego, Antártida e Islas del Atlántico Sur</option>
+                <option value="Tucumán">Tucumán</option>                 
+                </select>
 
                 <div>
                     <h2 class="text">Perfil del usuario</h2>
                     <label for="TipoCuenta">Comprador
-                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta">
+                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta" >
                     </label>
 
                     <label for="TipoCuenta">Vendedor
-                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta">
+                        <input class="register__form__detalles--perfilusuario" type="radio" name="TipoCuenta" >
                     </label>
                 </div>
 
@@ -109,9 +138,20 @@
                     <label for="checkbox-5">Vida sana
                         <input type="checkbox" name="checkbox-5">
                     </label>
-                    
+                
                 </div>
+                <h4>Ingresa su foto de perfil</h4>
+                <label  for="fotoDeUsuario">
+                    <input class="register__form-input" type="file" name="fotoDeUsuario" accept=".jpg , .png" required>
+                </label>
             </div>
+            <div class="asd">
+            
+                <button class="button_delete" type="reset">Borrar</button>
+
+                <a href="./" class="register__form-submit">ENVIAR</a>
+            </div>
+            
         </form>
     </main>
     <footer>

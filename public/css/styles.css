@@ -125,6 +125,8 @@ main {
     border: none;
     width: 100%;
     color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 .register__form-input-checkbox {
@@ -341,6 +343,32 @@ footer {
     }
 
 
+}
+
+.button_send{
+  
+    border: solid 1px black;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.button_delete{
+        
+        width: 80%;
+        border-radius: 8%;
+        margin: 10px;
+        border: solid 1px black;
+        background-color: red;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        
+    
 }
 
 
