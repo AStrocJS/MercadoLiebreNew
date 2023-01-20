@@ -1,16 +1,19 @@
-* {
+
+
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-body {
+body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     background-color: var(--Gris-claro);
 }
 
-.home__header {
+.home__header{
     background-color: var(--Amarillo);
     padding: 10px;
 }
@@ -19,7 +22,7 @@ header p {
     text-align: center;
 }
 
-.header__buerger--menu {
+.header__buerger--menu{
     color: white;
     text-align: center;
 }
@@ -41,7 +44,7 @@ header p {
     margin-right: 3%;
 }
 
-.search input {
+.search input{
     display: flex;
     background-color: white;
     border: none;
@@ -55,7 +58,7 @@ header p {
     right: 21px;
 }
 
-.lupa {
+.lupa{
     background-color: #ffffff00;
     border: none;
     border-radius: 5px;
@@ -64,7 +67,7 @@ header p {
     right: 10px;
 }
 
-.home__compra--en {
+.home__compra--en{
     font-size: 400px;
     text-align: center;
     font-size: 12px;
@@ -73,7 +76,7 @@ header p {
 
 
 
-.fa-bars {
+.fa-bars{
     background-color: var(--Celeste);
     padding: 12px;
     border-radius: 15%;
@@ -84,15 +87,13 @@ header p {
     display: none;
 }
 
-.navbar,
-ul {
+.navbar, ul{
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
 
-.navbar,
-a {
+.navbar, a{
     color: var(--Gris-oscuro);
     display: inline-block;
     font-size: 17px;
@@ -102,34 +103,32 @@ a {
     display: none;
 }
 
-.banner img {
+.banner img{
     width: 100%;
 }
 
-.text {
+.text{
     color: var(--Gris-oscuro);
     text-align: center;
     font-size: 28px;
 }
 
-main {
+main{
     background-color: var(--Gris-claro);
     width: 90%;
     margin: auto;
 }
 
-.register__form-submit {
+.register__form-submit{
     background-color: var(--Celeste);
     padding: 10px;
     border-radius: 10px;
     border: none;
     width: 100%;
     color: white;
-    text-decoration: none;
-    text-align: center;
 }
 
-.register__form-input-checkbox {
+.register__form-input-checkbox{
     background-color: var(--Celeste);
     padding: 5px;
     border-radius: 10px;
@@ -138,8 +137,8 @@ main {
     color: white;
 }
 
-.register-form {
-    background-color: #dde0e0;
+.register-form{
+    background-color: white;
     justify-content: center;
     border-radius: 20px;
     margin: 40px 0px;
@@ -149,7 +148,7 @@ main {
     padding: 20px;
 }
 
-.login-form {
+.login-form{
     background-color: var(--Gris-claro);
     justify-content: center;
     border-radius: 20px;
@@ -160,31 +159,31 @@ main {
     padding: 20px;
 }
 
-.register__form--detalles {
+.register__form--detalles{
     display: flex;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
     gap: 50px;
-
+    
 }
 
-.register__form__detalles--perfilusuario {
+.register__form__detalles--perfilusuario{
     text-align: center;
     justify-content: space-between;
-
+    
 }
 
-.register__form__detalles--checkbox {
+.register__form__detalles--checkbox{
     display: flex;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column ;
     gap: 50px;
-
+    
 }
 
-.register__form-input {
+.register__form-input{
     background-color: var(--Gris-claro);
     padding: 10px;
     border-radius: 10px;
@@ -192,7 +191,7 @@ main {
     width: 100%;
 }
 
-.login__form-input {
+.login__form-input{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
@@ -201,52 +200,77 @@ main {
 }
 
 
-h3 {
+h3{
     text-align: center;
 }
 
-.articulos {
+.articulos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
-.produc {
+
+
+.produc{
     margin-bottom: 10px;
     margin: auto;
     position: relative;
     width: 80%;
     background-color: white;
     margin-top: 12px;
+    transition: all 1s;
 }
 
-.produc img {
+.produc:hover{
+    box-shadow: 5px 5px 5px 5px var(--Gris-oscuro);
+}
+
+.produc h4{
+    color: var(--Gris-oscuro);
+    font-weight: 300;
+    margin: 0;
+    height: 0px;
+    width: 100%;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.produc:hover h4{
+    height: 50px;
+    margin-top: 30px;
+}
+
+
+
+.produc img{
     width: 100%;
 }
 
-.inf--produc {
+.inf--produc{
     display: flex;
     border-top: 2px solid var(--Gris-claro);
     padding: 26px;
     flex-direction: column;
 }
 
-.preciodescuento {
+ .preciodescuento{
     display: flex;
 }
 
-.precio {
+.precio{
     font-size: 18px;
 }
 
-.descuento {
+.descuento{
     font-size: 16px;
     color: #39b34a;
     width: auto;
     padding: 0px 0px 0px 14px;
 }
 
-.fa-truck {
+.produc i{
     color: #39b54a;
     font-size: 16px;
     border-radius: 50%;
@@ -255,84 +279,87 @@ h3 {
     position: absolute;
     right: 20px;
     bottom: 85px;
+    transition: 1s;
 }
 
-.freet {
-    display: flex;
+.produc:hover i{
+    transform: rotate(-360deg);
+}
+
+.freet{
     background-color: white;
     font-size: 18px;
     text-align: center;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    
 }
 
-.descrip {
+.descrip{
     font-size: 12px;
 }
-
-.descripcion {
+.descripcion{
     font-size: 16px;
     color: var(--Gris-oscuro);
     padding: 9px 0px 0px 0px;
 }
-
-.copyright {
+.copyright{
     font-size: 12px;
     margin-top: 10px;
     text-align: left;
 }
 
-.fa-credit-card {
+.fa-credit-card{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
     margin: 14px;
 }
 
-.fa-gift {
+.fa-gift{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
     margin: 10px;
 }
 
-.fa-user-shield {
+.fa-user-shield{
     color: var(--Celeste);
     transition: color 350ms;
     margin-bottom: 1px;
     margin: 10px;
 }
 
-footer {
+footer{
     padding: 20px 0px 0px 0px;
 }
 
 
-@media(min-width: 361px) {
+@media(min-width: 361px){
     .header-top {
         display: flex;
         align-items: center;
     }
-
+    
     .logo {
-        display: flex;
+    display: flex;
     }
-
+    
     .search {
         display: flex;
         width: 52%;
         justify-content: space-between;
     }
-
-    .search input {
+    
+    .search input{
         display: block;
         background-color: white;
         border: none;
         border-radius: 5px;
         padding: 10px;
     }
-
+    
     .fa-search {
         display: flex;
         color: gray;
@@ -345,44 +372,94 @@ footer {
 
 }
 
-.button_send{
-  
-    border: solid 1px black;
-    background-color: green;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-}
+@media(min-width: 768px){
 
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 
-.button_delete{
-        
-        width: 80%;
-        border-radius: 8%;
-        margin: 10px;
-        border: solid 1px black;
-        background-color: red;
-        color: white;
-        font-size: 16px;
+    .home__header{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__buerger--menu{
+        display: none;
+    }
+
+    .home__compra--en {
+        font-size: 400px;
         text-align: center;
-        text-decoration: none;
-        
+        font-size: 12px;
+        padding: 0px;
+    }
+
+    .barra{
+        display: flex;
+        gap: 10px;
+        padding: 40px 0px 0px 0px;
+    }
+
+    .navbar{
+        display: flex;
+    }
+    .search{
+        display: flex;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin-right: 16%;
+    }
+
+    .header-top{
+        width: 65%;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 0px 0px 0px 10px;
+    }
+
+    .logo img{
+    display: flex;
+    position: relative;
+    }
+
+    .main--section{
+        display: flex;
+    }
+
+
+    .articulos{
+        display: flex;
+    }
     
+    .produc{
+        width: 45%;
+    }
+
+
 }
 
+@media(min-width: 769px){
 
-
-@media(min-width: 768px) {
-
-    header {
+    header{
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
     }
 
-    .home__header {
+    .home__header{
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -390,7 +467,7 @@ footer {
         align-items: center;
     }
 
-    .header__buerger--menu {
+    .header__buerger--menu{
         display: none;
     }
 
@@ -401,17 +478,16 @@ footer {
         padding: 0px;
     }
 
-    .barra {
+    .barra{
         display: flex;
         gap: 10px;
         padding: 40px 0px 0px 0px;
     }
 
-    .navbar {
+    .navbar{
         display: flex;
     }
-
-    .search {
+    .search{
         display: flex;
     }
 
@@ -422,46 +498,46 @@ footer {
         margin-right: 16%;
     }
 
-    .header-top {
+    .header-top{
         width: 65%;
         justify-content: space-between;
     }
 
-    .logo {
+    .logo{
         padding: 0px 0px 0px 10px;
     }
 
-    .logo img {
-        display: flex;
-        position: relative;
+    .logo img{
+    display: flex;
+    position: relative;
     }
 
-    .main--section {
-        display: flex;
-    }
-
-
-    .articulos {
+    .main--section{
         display: flex;
     }
 
-    .produc {
+
+    .articulos{
+        display: flex;
+    }
+    
+    .produc{
         width: 45%;
     }
 
-
 }
 
-@media(min-width: 769px) {
 
-    header {
+@media(min-width: 1180px){
+
+    header{
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
     }
 
-    .home__header {
+    .home__header{
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
@@ -469,7 +545,7 @@ footer {
         align-items: center;
     }
 
-    .header__buerger--menu {
+    .header__buerger--menu{
         display: none;
     }
 
@@ -480,131 +556,73 @@ footer {
         padding: 0px;
     }
 
-    .barra {
+    .barra{
         display: flex;
         gap: 10px;
         padding: 40px 0px 0px 0px;
     }
 
-    .navbar {
-        display: flex;
-    }
-
-    .search {
-        display: flex;
-    }
-
-    .search {
-        display: flex;
-        align-items: center;
-        width: 27%;
-        margin-right: 16%;
-    }
-
-    .header-top {
-        width: 65%;
-        justify-content: space-between;
-    }
-
-    .logo {
-        padding: 0px 0px 0px 10px;
-    }
-
-    .logo img {
-        display: flex;
-        position: relative;
-    }
-
-    .main--section {
-        display: flex;
-    }
-
-
-    .articulos {
-        display: flex;
-    }
-
-    .produc {
-        width: 45%;
-    }
-
-}
-
-
-@media(min-width: 1180px) {
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-
-    .home__header {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .header__buerger--menu {
-        display: none;
-    }
-
-    .home__compra--en {
-        font-size: 400px;
-        text-align: center;
-        font-size: 12px;
-        padding: 0px;
-    }
-
-    .barra {
-        display: flex;
-        gap: 10px;
-        padding: 40px 0px 0px 0px;
-    }
-
-    .search input {
+    .search input{
         width: 100%;
     }
-
-    .navbar {
+    
+    .navbar{
         display: flex;
     }
-
-    .search {
+    .search{
         display: flex;
         position: relative;
         justify-content: center;
         width: 60%;
     }
 
-    .header-top {
+    .header-top{
         width: 77%;
         justify-content: space-between;
     }
 
-    .logo {
+    .logo{
         padding: 0px 0px 0px 10px;
     }
 
-    .logo img {
-        display: flex;
-        position: relative;
-        width: 81%;
+    .logo img{
+    display: flex;
+    position: relative;
+    width: 81%;
     }
 
-    .main--section {
-        display: flex;
-    }
-
-
-    .articulos {
+    .main--section{
         display: flex;
     }
 
-    .produc {
+
+    .articulos{
+        display: flex;
+    }
+    
+    .produc{
         width: 24%;
+    }
+
+    .Section-footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .freet{
+        background-color: white;
+        font-size: 18px;
+        text-align: center;
+        align-items: center;
+        width: 33%;
+        padding-bottom: 40px;
+        
+    }
+    
+    .copyright{
+        position: absolute;
+        bottom: -400px;
     }
 }
