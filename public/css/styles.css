@@ -211,9 +211,9 @@ h3{
     
 }
 
+/* PRODUCTOS  */
 
-
-.produc{
+.produc1,.produc2,.produc3,.produc4{
     margin-bottom: 10px;
     margin: auto;
     position: relative;
@@ -223,11 +223,11 @@ h3{
     transition: all 1s;
 }
 
-.produc:hover{
+.produc1:hover, .produc2:hover,.produc3:hover,.produc4:hover{
     box-shadow: 5px 5px 5px 5px var(--Gris-oscuro);
 }
 
-.produc h4{
+.produc1 h4,.produc2 h4,.produc3 h4,.produc4 h4{
     color: var(--Gris-oscuro);
     font-weight: 300;
     margin: 0;
@@ -237,18 +237,18 @@ h3{
     overflow: hidden;
 }
 
-.produc:hover h4{
+.produc1:hover h4,.produc2:hover h4,.produc3:hover h4,.produc4:hover h4{
     height: 50px;
     margin-top: 30px;
 }
 
 
 
-.produc img{
+.produc1 img,.produc2 img,.produc3 img,.produc4 img{
     width: 100%;
 }
 
-.inf--produc{
+.inf--produc1,.inf--produc2,.inf--produc3,.inf--produc4{
     display: flex;
     border-top: 2px solid var(--Gris-claro);
     padding: 26px;
@@ -257,6 +257,7 @@ h3{
 
  .preciodescuento{
     display: flex;
+    
 }
 
 .precio{
@@ -270,7 +271,7 @@ h3{
     padding: 0px 0px 0px 14px;
 }
 
-.produc i{
+.produc1 i,.produc2 i,.produc3 i,.produc4 i{
     color: #39b54a;
     font-size: 16px;
     border-radius: 50%;
@@ -282,7 +283,7 @@ h3{
     transition: 1s;
 }
 
-.produc:hover i{
+.produc1:hover i,.produc2:hover i,.produc3:hover i,.produc4:hover i{
     transform: rotate(-360deg);
 }
 
@@ -331,9 +332,24 @@ h3{
     margin: 10px;
 }
 
-footer{
-    padding: 20px 0px 0px 0px;
+
+
+.produc2,.produc3,.produc4{
+    display:none
 }
+
+footer {
+     padding: 20px 0px 0px 0px;
+}
+
+div i:hover {
+
+        color: rgb(26, 233, 50);
+        cursor: pointer;
+    
+}
+
+
 
 
 @media(min-width: 361px){
@@ -371,6 +387,8 @@ footer{
 
 
 }
+
+
 
 @media(min-width: 768px){
 
@@ -443,11 +461,18 @@ footer{
         display: flex;
     }
     
-    .produc{
+    .produc1,.produc2,.produc3,.produc4{
         width: 45%;
     }
+.produc2{
+    display: block;
+}
 
-
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
 }
 
 @media(min-width: 769px){
@@ -524,11 +549,16 @@ footer{
     .produc{
         width: 45%;
     }
+        .copyright {
+            font-size: 12px;
+            margin-top: 10px;
+            text-align: left;
+        }
 
 }
 
 
-@media(min-width: 1180px){
+@media(min-width: 1024px){
 
     header{
         display: flex;
@@ -621,8 +651,18 @@ footer{
         
     }
     
-    .copyright{
-        position: absolute;
-        bottom: -400px;
+    
+
+    .produc1,.produc2,.produc3,.produc4{
+        display: block;
     }
+
+.copyright {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+
+
 }
